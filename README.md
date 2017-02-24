@@ -124,8 +124,8 @@ let inline get lens = fst lens
 let inline set lens = snd lens
 ```
 > note that the `inline` keyword is used in order to keep the definition generic
-> and not let the compiler infere the type, the first time we call any of the functions
-> use this [reference](http://blog.2mas.xyz/constraints-in-fsharp/) if not clear.
+> and not let the compiler infere the type the first time we call any of the functions. <br>
+> Use this [reference](http://blog.2mas.xyz/constraints-in-fsharp/) if not clear.
 
 
 Now we can define a `Lens` for each property of Record and just by defining 
