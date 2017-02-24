@@ -141,7 +141,6 @@ Import `Optics.fs` file to your project and reference all of each functions as `
 ## To Do
 
 Implement `Prism` for `Option` return types. ( ~ by 28.02.17 )
-<<<<<<< HEAD
 
 ## References
 
