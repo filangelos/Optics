@@ -1,4 +1,4 @@
-# Optics in F/#
+# Optics in F\# #
 
 ## Background
 
