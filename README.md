@@ -150,5 +150,3 @@ Implement `Prism` for `Option` return types. ( ~ by 28.02.17 )
 3. [Lenses in F#](http://bugsquash.blogspot.co.uk/2011/11/lenses-in-f.html)
 4. [Inline Functions](http://blog.2mas.xyz/constraints-in-fsharp/)
 5. [MSDN Inline Functions](https://docs.microsoft.com/en-us/dotnet/articles/fsharp/language-reference/functions/inline-functions)
-=======
->>>>>>> 8bb48b8be87e31ba8bc363321729403402bd1912
