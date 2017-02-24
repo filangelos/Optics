@@ -1,4 +1,4 @@
-# Optics in F#
+# Optics in F\# #
 
 ## Background
 
@@ -123,6 +123,9 @@ let inline get lens = fst lens
 // abstract set function
 let inline set lens = snd lens
 ```
+> note that the `inline` keyword is used in order to keep the definition generic
+> and not let the compiler infere the type, the first time we call any of the functions
+> use this [reference](http://blog.2mas.xyz/constraints-in-fsharp/) if not clear.
 Now we can define a `Lens` for each property of Record and just by defining 
 a new top-level-function `let fooGetter = Optics.get <Record>.<Lens>` and `let fooSetter = Optics.set <Record>.<Lens>`
 we have our functionally clean `get` and `set` functions ready. <br>
@@ -138,3 +141,11 @@ Import `Optics.fs` file to your project and reference all of each functions as `
 ## To Do
 
 Implement `Prism` for `Option` return types. ( ~ by 28.02.17 )
+
+## References
+
+1. [Haskell Docs](https://hackage.haskell.org/package/lens)
+2. [A Little Lens Starter Tutorial](https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)
+3. [Lenses in F#](http://bugsquash.blogspot.co.uk/2011/11/lenses-in-f.html)
+4. [Inline Functions](http://blog.2mas.xyz/constraints-in-fsharp/)
+5. [MSDN Inline Functions](https://docs.microsoft.com/en-us/dotnet/articles/fsharp/language-reference/functions/inline-functions)
